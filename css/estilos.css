@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, Arial, sans-serif;
+  color: #263248;
+  background: #f4f6fb;
+  line-height: 1.5;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 28px;
+  color: #233b76;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #304c8c;
+}
+
+section {
+  margin-bottom: 28px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e0e5ef;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(30, 50, 90, 0.06);
+}
+
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, Arial, sans-serif;
+  background: #ffffff;
+}
+
+caption {
+  padding-bottom: 12px;
+  color: #233b76;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #d8deea;
+  text-align: left;
+  vertical-align: middle;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: #ffffff;
+  background: #304c8c;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #f4f6fd;
+}
+
+tbody tr:hover {
+  background: #fff1b8;
+}
+
+.numero {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+tfoot {
+  font-weight: 700;
+  background: #e7ecfd;
+}
+
+tfoot td {
+  border-top: 2px solid #aab9df;
+}
+
+.horario table {
+  min-width: 900px;
+  table-layout: auto;
+}
+
+.horario tbody th {
+  min-width: 115px;
+  color: #304c8c;
+  background: #e7ecfd;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* CLASES TÉCNICAS */
+.tecnica {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.transversal {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* PROYECTOS */
+.proyecto {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.libre {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pausa td {
+  background: #e5e7eb;
+  color: #374151;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ambiente {
+  display: block;
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+
+.horario tbody td:hover {
+  filter: brightness(0.96);
+}
+
+.horario tfoot td {
+  color: #475569;
+  background: #f1f5f9;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  th,
+  td {
+    padding: 9px;
+  }
+
+  .horario table {
+    min-width: 900px;
+  }
+}

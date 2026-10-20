@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de tablas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Practica de tablas HTML</h1>
+        <section>
+      <h2>1. Primera tabla</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>3.8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Encabezados con th</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Aprendiz</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>4.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Secciones de una tabla</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Teclado</td>
+            <td>$85.000</td>
+          </tr>
+          <tr>
+            <td>Mouse</td>
+            <td>$40.000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>$125.000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. Título de la tabla</h2>
+      <table>
+        <caption>Notas del primer trimestre</caption>
+        <thead>
+          <tr>
+            <th scope="col">Aprendiz</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>4.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>5. Unir columnas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Datos personales</th>
+            <th scope="col">Ficha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>Gómez</td>
+            <td>2875432</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. Unir filas</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="row">Lunes</th>
+            <td>7:00 a. m.</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>9:00 a. m.</td>
+            <td>CSS</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>7. Accesibilidad con scope</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Aprendiz</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ana</th>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Carlos</th>
+            <td>3.8</td>
+          </tr>
+          <tr>
+            <th scope="row">Laura</th>
+            <td>4.2</td>
+          </tr>
+          <tr>
+            <th scope="row">Andrés</th>
+            <td>3.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>8. Tabla con estilos</h2>
+      <div class="tabla-contenedor">
+        <table>
+          <caption>Notas del primer trimestre</caption>
+          <thead>
+            <tr>
+              <th scope="col">Aprendiz</th>
+              <th scope="col">Ficha</th>
+              <th scope="col">Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Ana Gómez</th>
+              <td>2875432</td>
+              <td class="numero">4.5</td>
+            </tr>
+            <tr>
+              <th scope="row">Carlos Ruiz</th>
+              <td>2875432</td>
+              <td class="numero">3.8</td>
+            </tr>
+            <tr>
+              <th scope="row">Laura Pérez</th>
+              <td>2875432</td>
+              <td class="numero">4.2</td>
+            </tr>
+            <tr>
+              <th scope="row">Andrés Mejía</th>
+              <td>2875432</td>
+              <td class="numero">3.5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Promedio del grupo</td>
+              <td class="numero">4.0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    </main>
+</body>
+</html>
