@@ -72,3 +72,7 @@ tbody th{
 thead{
     position: sticky;
 }
+tfoot{
+    text-align: right;
+    font-size: 15px;
+}
